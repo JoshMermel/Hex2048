@@ -64,12 +64,36 @@ and gave me valuable feedback
 <p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
 
 <h3>
-<a name="Authors\'s notes" class="anchor" href="#Author\'s notes"><span class="octicon octicon-link"></span></a>Author\'s notes</h3>
+<a name="Authors's notes" class="anchor" href="#Author's notes"><span class="octicon octicon-link"></span></a>Author's notes</h3>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+<p>
+This app was written and tested entirely on the android virtual device emulator
+which was a horrible experience.  Many decisions were made poorly as a result
+such as animation time and swipe angle tolerance. After some testing I settled
+on a tolerance of 25 degrees for all diagonal angles and 30 degrees for
+horizontal swipes because it is ergonomically harder to swipe perfectly
+sideways.  I settled on a 1/10 of a second animation and 30fps though one
+tester complained that it was too fast.
+</p>
+
+<p>
+The android SDK was sometimes a joy to use and sometimes are horrible pain.  I
+struggled to understand the meaning of views, contexts, activities and other
+important objects.  Certain things that seemed like they ought to be easy gave
+me huge trouble.  I spent nearly and hour trying fumbling with passing
+arguments between various project layers.
+</p>
+
+<p>
+Using eclipse rather than my usual choice of code editor, Vim, was also a chore
+for me.  Some tools were nice such as suggestions for member variables and
+methods after typing Class. but navigation and space usage felt very alien to
+me.  I have gained an appreciation for why one would use and IDE like eclipse
+but currently feel more comfortable and productive in Vim.
+</p>
 
 <h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+<a name="Known Bugs" class="anchor" href="#Known Bugs"><span class="octicon octicon-link"></span></a>Known Bugs</h3>
 
 <p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
       </section>
